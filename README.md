@@ -50,3 +50,6 @@ PruebaModulo2/
 
 ## 👤 Autor
 **Danieloid3** - [@danieloid3](https://github.com/danieloid3)
+**Clan** - Hamilton
+**Célula** - Nebula
+**CC** - 1000653486
