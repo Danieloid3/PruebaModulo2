@@ -1,0 +1,337 @@
+:root{
+    --font-primary: 'Inter',inter;
+
+
+    /* =========================
+       NEUTRAL COLORS
+       ========================= */
+    --color-white: hsl(0, 100%, 100%);
+    --color-silver: hsl(216, 33%, 97%);
+    --color-primary: hsl(122, 39%, 49%);
+    --color-D-grey: hsl(0, 0%, 30%);
+    --color-secondary: hsl(200, 19%, 18%);
+    --color-grey: hsl(0, 0%, 44%);
+
+
+
+}
+
+
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box; /* Fundamental: incluye el padding en el tamaño total */
+    margin: 0;
+    padding: 0;
+
+}
+img, picture, svg {
+    display: block;
+    max-width: 100%;
+}
+body {
+    font-family: var(--font-primary),"Inter Semi Bold", sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+
+    min-height: 100vh;
+    max-width: 100%;
+    min-width: 300px;
+    overflow-x: hidden;
+
+
+}
+h1, h3 {
+    font-family: var(--font-primary),"Inter Semi Bold", sans-serif;
+    color: var(--color-D-grey);
+}
+h2{
+    font-weight: 600;
+    font-family: var(--font-primary),"Inter Semi Bold", sans-serif;
+    color: var(--color-D-grey);
+}
+p{
+    font-family: var(--font-primary),"Inter", sans-serif;
+    color: var(--color-grey);
+    font-size: 0.696rem;
+}
+a {
+    text-decoration: none;
+    font-family: var(--font-primary),"Inter", sans-serif;
+    font-size: 0.696rem;
+    font-weight: 500;
+    color: var(--color-D-grey);
+
+}
+.navbar,
+.caring-wrapper,
+.design-wrapper,
+.helping-wrapper,
+.footer-links
+{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    padding-top: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    padding: 0 0 0 5%;
+
+}
+.logo img{
+
+
+    width: 6.721rem;
+    max-width: none;
+    height: auto;
+}
+.user-actions{
+    display: flex;
+    gap: 1.5rem; /* Espacio entre los dos botones */
+    padding: 0 22% 0 10%;
+}
+
+/* El menú horizontal */
+.nav-links {
+    display: flex;
+    list-style: none; /* Quita los puntos */
+    gap: 2rem; /* Espacio entre palabras del menú */
+    padding: 0 0 0 15%;
+}
+
+/* Los textos del menú (Product, Company...) */
+.nav-links button {
+    background: none;
+    border: none;
+    /* Texto blanco sobre fondo rojo */
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 700;
+    font-size: 0.696rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #eeeeee;
+}
+
+.btn-login{
+    background: none;
+    border: none;
+    color: var(--color-primary); /* Texto blanco sobre fondo rojo */
+    font-weight: 700;
+    font-size: 0.696rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+}
+.btn-signup{
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 0.696rem;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem ;
+    border-radius: 6px;
+    min-width: 100px;
+    text-align: center;
+
+
+
+}
+
+.hero-section {
+    background-color: var(--color-silver);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7rem 2rem 2rem 2rem;
+    text-align: center;
+}
+.hero-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: start;
+    padding: 2rem 2rem 2rem 2rem;
+    gap: 1rem;
+
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: start;
+
+
+}
+.hero-section h1 {
+    font-size: 2.784rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+}
+.hero-section p {
+    margin-top: -2.25rem;
+    margin-bottom: -1rem;
+
+}
+.hero-section h1 span {
+    color: var(--color-primary);
+}
+.hero-image img{
+    width: 90%;
+    max-width: 90%;
+}
+.btn-register{
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 0.696rem;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem ;
+    border-radius: 3px;
+    min-width: 120px;
+    text-align: center;
+
+
+}
+.dot-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+
+
+
+}
+.dot-icons img{
+    width: 40%;
+    transform: translateY(1.4rem);
+}
+.clients-section{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2rem;
+    height: 600px;
+    justify-items: center;
+    margin-top: 2rem;
+}
+.clients-section p{
+    margin: -2.5rem;
+}
+.client-logos{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: -3rem;
+
+}
+.client-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+.client-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: -4rem;
+    padding-left: 17rem;
+    padding-right: 17rem;
+
+}
+.client-text p{
+    margin-top: 0.1rem;
+}
+.card{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 3rem;
+    justify-items: center;
+    text-align: center;
+    margin-top: -2rem;
+
+
+}
+
+.card p{
+    margin-top: 0.2rem;
+}
+.card img{
+    width: 40%;
+    margin-left: 2rem;
+}
+.client-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -0.5rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+}
+.client-bottom-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    text-align: start;
+    margin-top: -5rem;
+}
+.client-bottom p{
+    padding-left: 0;
+    padding-bottom: 1rem;
+    margin-left: 0;
+    text-align: start;
+    line-height: 1.5;
+}
+.learn-btn{
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 0.696rem;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem ;
+    border-radius: 3px;
+    min-width: 120px;
+    text-align: center;
+
+}
+
+.client-bottom h2{
+    padding-right: 2rem;
+    line-height: 1.5;
+}
+.client-bottom img{
+    width: 80%;
+}
+.helping-section{
+    margin-top: 40rem;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+}
+.helping-wrapper{
+
+}
+
