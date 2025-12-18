@@ -2,9 +2,7 @@
     --font-primary: 'Inter',inter;
 
 
-    /* =========================
-       NEUTRAL COLORS
-       ========================= */
+
     --color-white: hsl(0, 100%, 100%);
     --color-silver: hsl(216, 33%, 97%);
     --color-primary: hsl(122, 39%, 49%);
@@ -21,7 +19,7 @@
 
 
 *, *::before, *::after {
-    box-sizing: border-box; /* Fundamental: incluye el padding en el tamaño total */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 
@@ -99,23 +97,23 @@ header {
 }
 .user-actions{
     display: flex;
-    gap: 1.5rem; /* Espacio entre los dos botones */
+    gap: 1.5rem;
     padding: 0 22% 0 10%;
 }
 
-/* El menú horizontal */
+
 .nav-links {
     display: flex;
-    list-style: none; /* Quita los puntos */
-    gap: 2rem; /* Espacio entre palabras del menú */
+    list-style: none;
+    gap: 2rem;
     padding: 0 0 0 15%;
 }
 
-/* Los textos del menú (Product, Company...) */
+
 .nav-links button {
     background: none;
     border: none;
-    /* Texto blanco sobre fondo rojo */
+
     font-family: var(--font-primary), sans-serif;
     font-weight: 700;
     font-size: 0.696rem;
@@ -130,7 +128,7 @@ header {
 .btn-login{
     background: none;
     border: none;
-    color: var(--color-primary); /* Texto blanco sobre fondo rojo */
+    color: var(--color-primary);
     font-weight: 700;
     font-size: 0.696rem;
     cursor: pointer;
