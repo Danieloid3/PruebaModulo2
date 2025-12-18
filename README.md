@@ -7,7 +7,7 @@ https://danieloid3.github.io/PruebaModulo2/
 ## 🛠️ Instrucciones para clonar y visualizar el proyecto.
 1. Clona el repositorio
     - git clone https://github.com/danieloid3/PruebaModulo2.git
-2. Abre docs/index.html en tu navegador
+2. Abre index.html en tu navegador
 3. No requiere instalación de dependencias
 
 ## 📁 Estructura del Proyecto
@@ -50,3 +50,6 @@ PruebaModulo2/
 
 ## 👤 Autor
 **Danieloid3** - [@danieloid3](https://github.com/danieloid3)
+**Clan** - Hamilton
+**Célula** - Nebula
+**CC** - 1000653486
